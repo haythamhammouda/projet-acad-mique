@@ -1,0 +1,57 @@
+header, section, main, #visscalendario, hr, footer{
+    width: 95%; 
+  }
+
+header img{
+    width: 100%;
+}
+
+main .continente{
+    width: 45%;
+  }
+
+#visscalendario #gio{
+    width: 45%;
+}
+
+.novisual{
+    position: absolute;
+    left: -9999px;
+}
+
+.flechainvisible{
+    position: relative;
+    left: auto;
+}
+
+.tema{
+    width: 45%;
+}
+
+.torneo .campione img{
+    width: 98%;
+  }
+  
+  .torneo .sponsor img{
+    width: 98%;
+    height: 100px;
+  }
+
+  /* TORNEO A GRUPPI */
+  .torneogruppi{
+    width: 100%;
+    justify-content:left;
+  }
+
+  .torneogruppi .fasetorneo{
+    width: 1000px;
+  }
+
+.torneogruppi img{
+  /* border: #333 1px solid; */ 
+  width: 98%;
+}
+
+nav{
+  width: 100%;
+}

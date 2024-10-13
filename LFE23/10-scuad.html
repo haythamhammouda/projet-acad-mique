@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Crea tabellone torneo calcio per 10 equipere">
+  <meta name="keyworks" content="Crea tabellone torneo calcio per 10 equipere">
+  <title> 10 équipes</title>
+
+  
+
+    
+  <link rel="icon" href="cup.ico" />   
+     
+  <link rel="stylesheet" type="text/css" href="style2.css" /> 
+  
+  <link rel="stylesheet" media="mobile" href="styletrn2.css" />
+  <link rel="stylesheet" media="pc" href="styletrn3.css" />
+  
+  <link rel="stylesheet" type="text/css" href="styletrn.css" media="print" />
+
+<style>
+    img{
+        margin-left: 33%;
+    }
+</style>
+</head>
+
+<body>
+
+  <header>
+    <a href="admin.html">
+      <img src="logo-ehei.png" alt="logo EHEI">
+    </a>
+  </header>
+
+<section class="social">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-5262311813512571"
+            data-ad-slot="8775879541"
+            data-ad-format="link"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>    
+</section>
+  <section class="creacalendario">
+
+
+    <a href="8-scuad.html" title="créer un tableau de tournoi de football pour 8 équipes">8 equipe</a>
+    <a href="10-scuad.html" title="créer un tableau de tournoi de football pour 10 équipes">10 equipe</a>
+    <a href="12-scuad.html" title="créer un tableau de tournoi de football pour 12 équipes">12 equipe</a>
+    <h2 class="sutil">Créer un calendrier de football pour 10 équipes </h2>
+
+  </section>
+
+  <section class="vis_calendario">
+
+    <button onclick="creaCalendario()">&#8659  Un calendrier de vue &#8659</button> 
+       
+
+  
+
+
+  <form class="modoflex" method="POST" action="10scuad.php">
+
+    <h3 class="invisible"> un calendrier de football pour 10 équipes</h3>
+
+    <div class="float">
+        <label>equipe 1:</label> <input name="E1" class="txtequipe" type="text"><br>
+        <label>equipe 2:</label> <input name="E2" class="txtequipe" type="text"><br>
+        <label>equipe 3:</label> <input name="E3" class="txtequipe" type="text"><br>
+        <label>equipe 4:</label> <input name="E4" class="txtequipe" type="text"><br>
+        <label>equipe 5:</label> <input name="E5" class="txtequipe" type="text"><br>
+
+  
+      </div>
+  
+      <div class="float">
+        <label>equipe 6:</label> <input name="E6" class="txtequipe" type="text"><br>
+        <label>equipe 7:</label> <input name="E7" class="txtequipe" type="text"><br>
+        <label>equipe 8:</label> <input name="E8" class="txtequipe" type="text"><br>
+        <label>equipe 9:</label> <input name="E9" class="txtequipe" type="text"><br>
+        <label>equipe 10:</label> <input name="E10" class="txtequipe" type="text"><br>
+        <label>nom du tournoi:</label> <input name="NT" class="txtequipe" type="text"><br>
+
+  
+      </div>
+  
+      <button type="submit"  class="txtequipe">save </button>
+  
+
+
+    </form>
+
+  
+  <div id="visscalendario">
+  </div>
+  <script type="text/javascript" src="js10-scuad.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+
+  <p>Lorsque vous avez afficher le calendrier <a href="javascript:window.print();">cliquer ici</a></p>
+
+</section>
+</body>
+
+</html>

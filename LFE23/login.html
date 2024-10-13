@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="lfe23.png" />   
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Login</title>
+    <style> 
+    body, html {
+      height: 100%;
+      background-repeat: no-repeat;    
+      background:rgb(214, 231, 214);
+      position: relative;
+      /* margin-top: 100px; */
+    }
+    #login-box {
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      min-width: 350px;
+      margin: 0 auto;
+      border: 1px solid black;
+      background: rgba(48, 46, 45, 1);
+      min-height: 250px;
+      padding: 20px;
+      z-index: 9999;
+    }
+    #login-box .logo .logo-caption {
+      font-family: 'Poiret One', cursive;
+      color: white;
+      text-align: center;
+      margin-bottom: 0px;
+    }
+    #login-box .logo .tweak {
+      color: #b1c900;
+    }
+    #login-box .controls {
+      padding-top: 30px;
+
+    }
+    #login-box button.btn-custom {
+      border-radius: 2px;
+      margin-top: 25px;
+      background:#b1c900;
+      border-color: rgba(48, 46, 45, 1);
+      color: white;
+    }
+
+.circle-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 75px;
+}
+.circle-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hhh{
+  color: aliceblue;
+}
+
+.haytham {
+  margin-top: 160px;
+  border-radius: 50px;
+}
+
+
+    </style>
+    <body>
+      <form method="POST" action="login.php">
+
+      <div class="haytham">
+        <div id="login-box">
+          <div class="logo">
+            <img src="haytham.jpg" class="circle-img"/>
+
+            <h1 class="logo-caption"><span class="tweak">L</span>ogin</h1>
+          </div>
+          <div class="controls">
+            <label class="hhh">Nom admin :</label>
+            <input type="text" class="form-control" id="text" name="nomadmin" required  placeholder="Entrez votre nom ">
+            <label class="hhh">Passsword :</label>
+            <input type="password" class="form-control" id="password" name="password" required placeholder="Entrez votre password">
+            <button type="submit" class="btn btn-default btn-block btn-custom">Login</button>
+          </div>
+        </div>
+      </div>
+      </form>
+      </body>
+      </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #dfe3d3;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 220px;
+
+  }
+  
+  h1 {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+  
+  .form-group {
+      margin-bottom: 20px;
+  }
+  
+  label {
+      font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+  }
+  
+  
+  .btn {
+      width: 100%;
+      padding: 10px;
+  }
+  .bt {
+background-color: rgb(255, 255, 255);
+border-radius: 10px;
+  }
+
+</style>
+</head>
+<body style="background-color: rgb(237, 237, 237);">
+<div class="container">
+    <h1>Login</h1>
+    <form method="POST" action="login.php">
+    <div class="form-group">
+        <label for="nomadmin">Nom d'admin :</label>
+        <input type="text" class="form-control" id="text" name="nomadmin" required  placeholder="Entrez votre nom ">
+      </div>
+      <div class="form-group">
+        <label for="password">Password :</label>
+        <input type="password" class="form-control" id="password" name="password" required placeholder="Entrez votre password">
+      </div>
+      <button type="submit" class="bt">Envoyer</button>
+    </form>
+  </div>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html> -->

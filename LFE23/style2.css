@@ -1,0 +1,580 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: sans-serif;
+    /* color: #BBB; */
+  }
+  
+  header, section, main, #visscalendario, hr, nav, footer{
+    position: relative;
+    width: 1000px; 
+    margin: 10px auto;
+  }
+
+  header{
+      margin-top: 0;
+  }
+
+/*****************
+    invisible
+*/
+  .invisible, .flechainvisible{
+      /* display: none; */
+      position: absolute;
+      left: -9999px;
+  }
+
+
+
+/*******************
+    DISPLAY FLEX   
+*/
+  .modoflex { 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*******************
+    TITULOS SUTILES
+*/
+    .sutil{
+        font-family: sans-serif;
+        font-weight: 100;
+        letter-spacing: 3px;
+        font-size: 18px;
+        color: #333;
+    }
+
+/*****************
+    SOCIAL
+*/
+
+.social{
+    text-align: right;
+    padding: 10px;
+    border-bottom: 1px dotted #CCC;
+    border-radius: 20px;
+}
+
+.social a{
+    margin: 0 20px;
+}
+
+
+/*************************
+       Crea Calendario
+*/
+
+.creacalendario{
+    text-align: center;
+}
+
+.creacalendario h2, h3, h4{
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.creacalendario a:link{
+    display: inline-block;
+    width: auto;
+    margin: 5px 10px;
+    text-decoration: none;
+    color: #555;
+    transition: color 1s;
+}
+.creacalendario a:hover{
+    color: #333;
+}
+
+/******************
+       MAIN
+*/
+
+    main h3{
+        margin: 10px 0;
+    }
+
+  main .continente{
+    width: 24%;
+    border-top: 1px dotted #CCC;
+    border-radius: 30px;
+    text-align: center;
+  }
+
+  main .continente img{
+      padding: 5px;
+      width: 30px; 
+      text-align: center;
+      transition: 1s;
+      border-radius: 50%;
+  }
+
+  main .continente img:hover {
+    box-shadow: 5px 10px 25px #AAA;
+  }
+
+  /************************
+        MAIN LABEL INPUT
+  */
+
+ /* main */.float{
+      width: 49%;
+      border-top: 1px dotted #CCC;
+      border-radius: 30px;
+      text-align: center;
+  }
+
+  /* main */ .float input{
+      margin: 10px auto 10px auto;
+      padding: 5px 5px;
+      border:1px solid #333;
+      border-radius: 10px;
+      color: #333;
+      text-align: center;
+  }
+
+  /* main */ .float a:link , a :visited{
+      display: block;
+      width: 90%;
+      margin: 5px auto;
+      padding: 7px 7px;
+      text-decoration: none;
+      border-bottom: #BBB 1px dotted;
+      border-radius: 20px;
+      transition: color 1s;
+      transition: letter-spacing 1s;
+  }
+
+  /* main */ .float a:hover{
+    color: #333;
+    text-decoration: none;
+    border-bottom: #333 1px solid;
+    letter-spacing: 2px;
+}
+
+
+
+  main .crea{
+      width: 25%;
+      text-align: center;
+      border: #CCC  solid 1px;
+  }
+
+  main .gestire{
+      width: 25%;
+      text-align: center;
+      border: #CCC  solid 1px;
+
+  }
+
+  main .tornei{
+      width: 50%;
+      text-align: center;
+      border: #CCC  solid 1px;
+  }
+
+.vis_calendario{
+    text-align: center;
+    border-bottom: 1px dotted #CCC;
+    border-radius: 30px;
+}
+
+.vis_calendario button{
+    padding: 10px;
+    margin: 15px;
+    background-color: #333;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.vis_calendario button:hover{
+    background-color: #BBB;
+    color: #333;
+    transition: color 1s;
+}
+
+.vis_calendario a:hover{
+    color: #333;
+}
+
+
+.registrazione form{
+    width: 60%;
+    margin: 20px auto 30px auto;
+    
+}
+
+.registrazione form fieldset{
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 5px 10px 25px #AAA;
+}
+
+.registrazione form legend{
+    padding: 10px;
+    color: #333;
+}
+
+.registrazione form label{
+    display: block;
+    text-align: left;
+    color: #333;
+    margin: 20px 10px 5px 10px;
+}
+
+.registrazione form .normalfieldset{
+    padding: 5px 5px 5px 5px;
+    text-align: left;
+    box-shadow: 0 0 0;
+}
+
+
+.registrazione form input, select{
+    width: 80%;
+    padding: 10px 10px;
+    border:1px solid #333;
+    border-radius: 10px;
+    margin: 10px 5px;
+    text-align: center;
+    color: #333;
+}
+.registrazione form input[type=radio]{
+    width: 5%;
+    padding: 10px 10px;
+    margin: 10px 5px;
+}
+
+.registrazione form ::placeholder{
+    color: #CCC;
+}
+
+
+#visscalendario{
+    margin: 5px auto;
+    display:flex;   
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#visscalendario p{
+    text-align:center;
+    margin: 5px 5px;
+    color: #333;
+}
+
+#visscalendario #gio{
+    margin: 10px auto;
+    width: 30%;
+}
+
+#visscalendario #gio ul{
+    list-style:none;
+    text-align:center;
+}
+
+#visscalendario #gio ul li{
+    padding:5px 3px;
+    border-bottom:dotted 1px #333333;
+    border-radius: 30px;
+} 
+
+
+
+.torneo{
+    text-align: center;
+}
+
+.torneo h3{
+    font-size: 20px;
+    color: #333;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+
+.torneo h4{
+    font-size: 15px;
+    color: #333;
+    font-weight: 100;
+    letter-spacing: 5px;    
+}
+
+.torneo p{
+    color: #333;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+
+.torneo .campione img{
+    width: 780px;
+    height: auto;
+    background-color: #CCC;
+}
+
+.torneo .sponsor img{
+    width: 780px;
+    height: 200px;
+    background-color: #CCC;
+}
+
+
+.tabla{
+    width: 100%;
+    margin: 20px  0px;
+    transition: 1s;
+}
+.tabla:hover{
+    box-shadow: 5px 10px 25px #AAA;
+}
+
+.tabla caption{
+    padding: 20px;
+    font-size: 20px;
+    color: #333;
+    letter-spacing: 5px;
+    border-top: #BBB solid 1px;
+    border-radius: 20px;
+}
+
+.tabla tbody th{
+    padding: 12px;
+    color: rgb(255, 230, 0);
+    background-color: rgb(4, 124, 237);
+    border-radius: 10px;
+}
+
+.tabla tbody td{
+    color: #333;
+    padding: 7px;
+    border-bottom: #333 1px dotted;
+}
+
+.tabla tbody tr{
+    background-color: whitesmoke;
+    transition: 1s;
+}
+
+.tabla tbody tr:hover{
+    background-color: gold;
+}
+
+.tabla tbody tr td.giornata{
+    color: rgb(255, 230, 0);
+    background-color: rgb(4, 124, 237);
+    border-radius: 20px;
+}
+
+
+.tema{
+    width: 30%;
+    margin: 10px;
+}
+
+.tema h4{
+    color: #333;
+    border-bottom: #555 1px dotted;
+    border-radius: 0 0 20px 0;
+}
+
+.tema p{
+    color: #555;
+    padding: 5px;
+    line-height: 20px;
+    font-weight: 100;
+}
+
+.tema a:link, a:visited{
+    display: block;
+    text-align: right;
+    color: #AAA;
+    transition: 1s;
+}
+
+.tema a:hover{
+    color: #333
+}
+
+
+
+nav{
+    border-top: 1px dotted #000;
+    border-radius: 30px;
+}
+
+nav ul{
+    
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li{
+    padding: 10px 10px 0px 10px;
+    cursor: pointer;
+}
+
+nav ul li.gris{
+    color: #333;
+    transition: 1s;
+}
+
+nav ul li:hover{
+    color: #333
+}
+
+.camp p{
+    padding: 10px 5px;
+    color: #333;
+    background-color: aliceblue;
+}
+
+.torneogruppi{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px dotted #CCC;
+    border-radius: 30px;
+    overflow: auto;
+}
+
+
+.torneogruppi .fasetorneo{
+    width: 1000px;
+    height: 600px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 30;
+}
+
+.torneogruppi .fasetorneo .grupos{
+    width: 200px;
+}
+
+.torneogruppi .fasetorneo .grupos h6{
+    font-size: 12px;
+    font-weight: 100;
+    margin-right: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+.torneogruppi .fasetorneo .grupos p{
+    color: #555;
+    display: inline-block;
+    width:70%;
+}
+
+.torneogruppi .fasetorneo .grupos span{
+    display: inline-block;
+    width: 18px;
+    border: #AAAAAA dotted 1px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.torneogruppi .fasetorneo .grupos .final{
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+                
+
+.tablag{
+    width: 100%;
+    margin: 20px  0px;
+    transition: 1s;
+}
+.tablag:hover{
+    box-shadow: 5px 10px 25px #AAA;
+}
+
+
+.tablag caption{
+    padding: 20px;
+    font-size: 20px;
+    color: #333;
+    letter-spacing: 5px;
+    border-top: #BBB solid 1px;
+    border-radius: 20px;
+}
+
+.tablag tbody th{
+    padding: 12px;
+    border-radius: 10px;
+}
+
+
+.tablag tbody tr{
+    transition: 1s;
+}
+
+.tablag tbody tr:hover{
+    background-color: rgb(155, 240, 205);
+}
+
+
+
+.tablag tbody td{
+    padding: 7px;
+    border-bottom: #333 1px dotted;
+}
+
+
+
+
+
+.tabla tbody tr td.giornata{
+    color: rgb(232, 244, 7);
+    background-color: rgb(4, 124, 237);
+    border-radius: 20px;
+}
+
+
+
+           
+            .A{
+                background-color:#2ad4ff;
+                padding:3px;
+            } 
+            
+            .B{
+                background-color:#00d254;
+                padding:3px;
+            } 
+            
+            .C{
+                background-color:#a200ca;
+                padding:3px;
+                color:#FFFFFF;
+            } 
+            
+            .D{
+                background-color:#e95d00;
+                padding:3px;
+            } 
+            
+            .E{
+                background-color:#abc837;
+                padding:3px;
+            } 
+            
+            .F{
+                background-color:#d4aa00;
+                padding:3px;
+            } 
+            
+            .G{
+                background-color:#ff0066;
+                padding:3px;
+                color: #FFFFFF;
+            } 
+            
+            .H{
+                background-color:#ffcc00;
+                padding:3px;
+            }       

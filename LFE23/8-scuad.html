@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="créer un tableau de tournoi de football pour 8 équipes">
+  <meta name="keyworks" content="créer un tableau de tournoi de football pour 8 équipes">
+  <title> 8 équipes</title>
+
+  
+
+    
+  <link rel="icon" href="cup.ico" />   
+     
+  <link rel="stylesheet" type="text/css" href="style2.css" /> 
+  
+  <link rel="stylesheet" media="mobile" href="styletrn2.css" />
+  <link rel="stylesheet" media="pc" href="styletrn3.css" />
+  
+  <link rel="stylesheet" type="text/css" href="styletrn.css" media="print" />
+<style>
+    img{
+        margin-left: 33%;
+    }
+</style>
+
+<!-- <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 14px;
+        font-family: sans-serif;
+    }
+    #visscalendario #gio {
+        margin: 10px auto;
+        width: 30%;
+    }
+
+    #visscalendario{
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+    div{
+        display: block;
+    }
+</style> -->
+</head>
+
+<body>
+
+  <header>
+    <!-- <h1 class="invisible">créer un tableau de tournoi de football pour 8 équipes</h1>
+    <p class="invisible"> un tableau de tournoi de football pour 8 équipes</p> -->
+    <a href="admin.html">
+      <img src="logo-ehei.png" alt="logo EHEI">
+    </a>
+  </header>
+
+
+  
+
+<section class="social">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-5262311813512571"
+            data-ad-slot="8775879541"
+            data-ad-format="link">
+        </ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>    
+</section>
+  <section class="creacalendario">
+
+
+    <a href="8-scuad.html" title="créer un tableau de tournoi de football pour 8 équipes">8 equipe</a>
+    <a href="10-scuad.html" title="créer un tableau de tournoi de football pour 10 équipes">10 equipe</a>
+    <a href="12-scuad.html" title="créer un tableau de tournoi de football pour 12 équipes">12 equipe</a>
+    <h2 class="sutil"> un calendrier de football pour 8 équipes </h2>
+
+  </section>
+
+
+  <section class="vis_calendario">
+
+    <button onclick="creaCalendario()">&#8659  Un calendrier de vue &#8659</button> 
+
+     
+
+
+
+
+  <form class="modoflex" method="POST" action="8scuad.php">
+
+    <h3 class="invisible"> un calendrier de football pour 8 équipes</h3>
+
+    <div class="float">
+        <label>equipe 1:</label> <input name="E1" class="txtequipe" type="text"><br>
+        <label>equipe 2:</label> <input name="E2" class="txtequipe" type="text"><br>
+        <label>equipe 3:</label> <input name="E3" class="txtequipe" type="text"><br>
+        <label>equipe 4:</label> <input name="E4" class="txtequipe" type="text"><br>
+  
+      </div>
+
+      <div class="float">
+        <label>equipe 5:</label> <input name="E5" class="txtequipe" type="text"><br>
+        <label>equipe 6:</label> <input name="E6" class="txtequipe" type="text"><br>
+        <label>equipe 7:</label> <input name="E7" class="txtequipe" type="text"><br>
+        <label>equipe 8:</label> <input name="E8" class="txtequipe" type="text"><br>
+        <label>nom du tournoi:</label> <input name="NT" class="txtequipe" type="text"><br>
+
+  
+      </div>
+  
+      <button type="submit"  class="txtequipe">save </button>
+
+
+  </form>
+
+   
+
+  <div id="visscalendario">
+    <!-- <div id="gio"><p>journee 1 </p>
+        <ul>
+            <li> - </li>
+            <li> - </li>
+            <li> - </li>
+            <li> - </li>
+        </ul>
+    </div>
+
+    <div id="gio"><p>journee 2 </p>
+        <ul>
+            <li> - </li>
+            <li> - </li>
+            <li> - </li>
+            <li> - </li>
+        </ul>
+    </div>
+
+    <div id="gio"><p>journee 3 </p>
+        <ul>
+            <li> - </li>
+            <li> - </li>
+            <li> - </li>
+            <li> - </li>
+        </ul>
+    </div>
+
+    <div id="gio"><p>journee 4 </p>
+        <ul>
+            <li> - </li>
+            <li> - </li>
+            <li> - </li>
+            <li> - </li>
+        </ul>
+    </div>
+
+    <div id="gio"><p>journee 5 </p>
+        <ul>
+            <li> - </li>
+            <li> - </li>
+            <li> - </li>
+            <li> - </li>
+        </ul>
+    </div>
+
+    <div id="gio"><p>journee 6 </p>
+        <ul>
+            <li> - </li>
+            <li> - </li>
+            <li> - </li>
+            <li> - </li>
+        </ul>
+    </div>
+
+    <div id="gio"><p>journee 7 </p>
+        <ul>
+            <li> - </li>
+            <li> - </li>
+            <li> - </li>
+            <li> - </li>
+        </ul>
+    </div> -->
+  </div>
+  <p>Lorsque vous avez afficher le calendrier <a href="javascript:window.print();">cliquer ici</a></p>
+
+
+  <script type="text/javascript" src="js8-scuad.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+</section>
+
+</body>
+
+</html>

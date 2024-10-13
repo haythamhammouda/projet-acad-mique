@@ -1,0 +1,24 @@
+header > h1{
+    display: none;
+}
+header > p{
+    display: none;
+}
+.vis_calendario > p{
+    display: none;
+}
+
+.social, .creacalendario, button, section.modoflex{
+    display: none;
+}
+
+.modoflex > h3{
+    display: none;
+}
+
+.invisible{
+    /* display: none; */
+    position: relative;
+    left: 3px;
+    text-align: left;
+}

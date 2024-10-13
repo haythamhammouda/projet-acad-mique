@@ -1,0 +1,44 @@
+
+.marquee-w {
+    position: relative;
+    display: block;
+    height: 50px;
+    width: 100%;
+    transform: translate(0%, 0%);
+    overflow: hidden;
+    margin-top: 3%;
+}
+/*.marquee {
+    position: absolute;
+    display: block;
+    margin: auto auto;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 100%;
+    height: 100%;
+}*/
+.marquee span {
+    display: inline-block;
+    font-family: 'poppinsbold';
+    text-align: center;
+    -webkit-text-stroke: 1px #000000;
+    white-space: nowrap;
+    min-width: 100%;
+    height: 100%;
+    line-height: 100%;
+    font-size: 36px;
+    animation: marquee 100s linear infinite;
+    background-color: rgb(230, 230, 230);
+
+}
+.marquee2 span {
+    animation-delay: 0s;
+}
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}

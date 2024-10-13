@@ -1,0 +1,65 @@
+html,body{
+    margin: O;
+    padding: O;
+    width: 100% ;
+    height : 100%;
+} 
+#entete{
+    margin: O;
+    padding: O;
+    width: 100% ;
+    height : 50%;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent ;
+}
+.video-entete{
+    left: O;
+    right: O;
+    width: 120% ;
+     height : 100%;
+    position: relative;
+    z-index:0;
+    object-fit: cover;
+     object-position: center;
+}
+.nomsite{
+    font-size: 50px;
+    text-align: center;
+     margin: 0;
+     padding-top: 5%;
+     color: #FFF;
+     position: relative;
+    font-family: SCRIPTINA,"script MT bold","sakkal majalla";
+    z-index: 1;
+}
+#formauto{
+    position: relative;
+     border: 1px solid #ca8312;
+      border-left: none;
+    background:transparent;
+    border-right: none;
+     width: 70%;
+      min-height: 10%;
+    text-align: center;
+    margin-left: auto;
+     margin-right: auto;
+     margin-top: -180px;
+    padding-top: -20px;
+}
+
+.motcle{
+    height: 30px;
+     width: 300px;
+      border: none ;
+       padding-left: 2px;
+       z-index: 1;
+}
+.btfind{
+    height: 30px; 
+    width: 300px; 
+    border: none ;
+     background-color: #F30;
+      color: rgb(255, 163, 140);
+      z-index: 1;
+}
